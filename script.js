@@ -150,7 +150,7 @@ function updateCart(event) {
 // Filter products by search or checkbox
 function filterProducts( ) {
     // Get search term
-    const searchTerm = searchInput.value.trim().toLowerCase();
+    const searchTerm = searchInput.value.trim();
     // Get checked categories
     const checkedCategories = Array.from(checkboxes)
       .filter((check) => check.checked)
