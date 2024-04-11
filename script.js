@@ -161,7 +161,7 @@ function filterProducts( ) {
       const product = products[index];
   
       // Check to see if product matches the search or checked items
-      const matchesSearchTerm = product.name.toLowerCase().includes(searchTerm);
+      const matchesSearchTerm = product.price.includes(searchTerm);
       const isInCheckedCategory =
         checkedCategories.length === 0 ||
         checkedCategories.includes(product.category);
